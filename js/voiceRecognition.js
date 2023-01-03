@@ -33,6 +33,9 @@ function onSpeak(event){
 
     //preciso verifica se é um valor válido:
     validValue(saidNum);
+    
+    //vejo se é game over:
+    gameOver()
 }
 
 //função pra exibir o chute na tela:
@@ -42,6 +45,15 @@ function showGuess(saidNum){
     div_guess.innerHTML = `
     <div>Você disse:</div>
     <span class="box">${saidNum}</span>`
+}
+
+//função pra dizer Game Over:
+function gameOver(){
+    document.body.classList.add('gameOverBody')
+    document.body.innerHTML = `
+    <h1>"Game Over"</h1>
+    <button class="btn_playAgain" id="playAgain">Jogar Novamente</button>`
+    
 }
 
 //evento pra não parar o jogo até eu acertar:
