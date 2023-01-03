@@ -8,6 +8,7 @@
     --white: #fff;
     --gray: #e2e2e2;
     --shadow: #000000c0;
+    --black: #000;
 }
 body{
     background: linear-gradient(to right, var(--purple), var(--blue));
@@ -59,4 +60,15 @@ h3{
 .btn_playAgain:hover{
     background-color: var(--light-purple);
     color: #fff;
+}
+.gameOverBody{
+    background: linear-gradient(to right, #B22222, #FF4500);
+}
+.gameOverBody button{
+    background-color: var(--black);
+    color: var(--white);
+}
+.gameOverBody button:hover{
+    background-color: var(--white);
+    color: var(--black)
 }
