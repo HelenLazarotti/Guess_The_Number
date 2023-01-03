@@ -7,9 +7,16 @@ function  validValue(saidNum){
     //verifico:
     //obs: selecionei conteudo de dentro if e na luz yellow, pedi p automaticamente criar uma função global...
     if(itsInvalid(num)){
-        //mostro na tela:
-        div_guess.innerHTML += `<div>Valor inválido</div>`
-
+        //se eu falar game over:
+        if(saidNum.toUpperCase() === 'GAME OVER'){
+            document.body.classList.add('gameOverBody')
+            document.body.innerHTML = `
+            <h1>"Game Over"</h1>
+            <button class="btn_playAgain" id="playAgain">Jogar Novamente</button>`
+        } else {
+            //mostro na tela:
+            div_guess.innerHTML += `<div>Valor inválido</div>`
+        }
         //coloco em todos, pra que não execute + nada dessas funções:
         return
     }
