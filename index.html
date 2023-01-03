@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número</title>
+    <!--Link pra tirar qualquer estilização do próprio css:-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Uso font awasome pra icons:-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Depois coloco o arq css se ñ perco all:-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Acerte o número secreto</h1>
+
+    <h3>O número secreto está entre <span id="lower-value"></span> e <span id="upper-value"></span></h3>
+
+    <div id="guess" class="message">
+        <!--Aqui vai toda parte que criei no JS-->
+        
+    </div>
+    <script src="js/sortNum.js"></script>
+    <script src="js/voiceRecognition.js"></script>
+    <script src="js/validations.js"></script>
+</body>
+</html>

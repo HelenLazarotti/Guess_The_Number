@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --purple:#9400D3;
+    --light-purple: #BA55D3;
+    --blue: #20B2AA;
+    --soft-blue:#00FFFF;
+    --white: #fff;
+    --gray: #e2e2e2;
+    --shadow: #000000c0;
+}
+body{
+    background: linear-gradient(to right, var(--purple), var(--blue));
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size: 2em;
+    margin-top: 1em;
+    color: var(--gray)
+}
+.message{
+    font-size: 1.4em;
+    margin-top: 4em;
+}
+.box{
+    border-radius: 0.2em;
+    box-shadow: 3px 3px 3px 3px var(--shadow);
+    display: inline-block;
+    font-size: 3.5em;
+    padding: 0.3em;
+    margin: 0.2em;
+
+}
+.box span{
+   display: flex;
+   align-items: center;
+}
+.btn_playAgain{
+    padding: 1em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: var(--soft-blue);
+    margin-top: 5em;
+}
+.btn_playAgain:hover{
+    background-color: var(--light-purple);
+    color: #fff;
+}
